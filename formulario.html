@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Breaking Bad</title>
+    <link rel="stylesheet" type="text/css" href="css\estilos.css" media="all">
+    <link rel="icon" href="../BREAKING_BAD/imagenes/icon.png" type="image/png">
+</head>
+<body id="fondo">
+    <div id="fraseformulario">
+        <h1>Breaking Bad - ¡ Que comience el juego !</h1>
+    </div>
+<div class="formulario">
+    <form name="Registro" action="raul.rodriguez@proeducaglobal.com" method="post"  autocomplete="off" enctype="multipart/form-data"></form> 
+<!-- primer campo de entrada de datos -->
+    <fieldset>
+        <legend> Datos personales</legend>
+            <p>
+                <label>Nombre:</label>
+                    <input type="text" name="nombre" value="" placeholder=" Introduce tu nombre de usuario " minlength="3" maxlength="30" required pattern="[A-Za-z]" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+            <p>
+                <label>Apellidos:</label>
+                    <input type="text" name="apellidos" value="" placeholder=" Introduce tus apellidos " minlength="2" maxlength="50" required pattern="[A-Za-z]" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+           <p>
+                <label>DNI:</label>
+                    <input type="text" name="DNI" value="" placeholder=" Ejemplo: 12345678X " minlength="7" maxlength="10" required pattern="[A-Za-z0-9]+" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+           </p>
+           <p>
+                 <label>Correo electrónico:</label>
+                    <input type="email" name="email" value="" placeholder=" Ejemplo: correo@gmail.com " required pattern="@" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+            <p>
+                <label>Sexo del usuario:</label>
+                    <input type="radio" name="sexo" value="H"> HOMBRE
+                    <input type="radio" name="sexo" value="M"> MUJER
+            </p>
+            <p>
+                <label>Fecha de nacimiento:</label>
+                    <input type="date" name="fecha" min="1924-31-01" max="2006-31-01"> 
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend> Dirección Postal</legend>
+            <p>
+                <label>Calle:</label>
+                    <input type="text" name="Calle" value="" placeholder=" Ejemplo: Calle De la Piruleta> " minlength="5" maxlength="45" pattern="[A-Za-z]" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+            <p>
+                <label>Número:</label>
+                    <input type="number" name="número" value="" placeholder=" Ejemplo: nº 5 " minlength="1" maxlength="7" required pattern="[0-9]+" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+           <p>
+                <label>Piso:</label>
+                    <input type="text" name="DNI" value="" placeholder=" Ejemplo: 3ºc " minlength="1" maxlength="5" required pattern="[A-Za-z0-9]+">
+                    <input type="submit" value=" Enviar">
+           </p>
+           <p>
+                <label>Código Postal:</label>
+                    <input type="text" name="DNI" value="" placeholder=" Ejemplo: Ejemplo CP: 34657 " minlength="2" maxlength="7" required pattern="[0-9]+" title=" Complete este campo">
+                    <input type="submit" value=" Enviar">
+            </p>
+            <p>
+                <label>Ciudad:</label>
+                    <input type="text" name="DNI" value="" placeholder=" Ejemplo: Madrid " minlength="3" maxlength="45" pattern="[A-Za-z]" title=" Complete este campo ">
+                    <input type="submit" value=" Enviar">
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend> Personajes del juego: </legend>
+            <p>
+                <label>Elige un personaje:</label>
+                    <input type="text" list="personajes">
+                        <datalist id="personajes">
+                            <option value="Jessie Pinkman"></option>
+                            <option value="Walter White"></option>
+                            <option value="Saul Goodman"></option>
+                            <option value="Gustavo Fring"></option>
+                            <option value="Pollos Hermanos"></option>
+                            <option value="Otros personajes"></option>
+                        </datalist>
+            </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Indica tu comentario:</legend>
+            <p><textarea name="comentarios"></textarea></p>
+    </fieldset>
+         <input type="submit" value=" Enviar formulario ">
+        <input type="reset" value=" Borrar todo el formulario ">
+        <input type="file" value=" Adjuntar archivos " accept=".pdf, .jpg, .png" multiple>
+</div>
+
+
+   </body>
+</html>
